@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card — Alex Rivera</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main class="page">
+      <article
+        data-testid="test-profile-card"
+        class="profile-card"
+        role="region"
+        aria-label="User profile card"
+      >
+        <!-- Avatar -->
+        <figure class="avatar-wrap">
+          <img
+            data-testid="test-user-avatar"
+            src="/assets/avatar-jessica.jpeg"
+            alt="Stephanie — person with short afro hair wearing a black shirt"
+            width="120"
+            height="120"
+            class="avatar"
+          />
+          <figcaption class="avatar-caption">@stephiee</figcaption>
+        </figure>
+
+        <!-- Main content -->
+        <div class="content">
+          <!-- Name & title -->
+          <header class="card-header">
+            <h1 data-testid="test-user-name" class="user-name">
+              Stephanie Oguocha
+            </h1>
+            <span class="user-role">Frontend Developer</span>
+          </header>
+
+          <!-- Bio -->
+          <p data-testid="test-user-bio" class="user-bio">
+            I build accessible, performant UIs that work for everyone. Obsessed
+            with clean semantics, WCAG compliance, and making the web a little
+            less broken — one component at a time.
+          </p>
+
+          <!-- Epoch time -->
+          <div class="time-row" aria-label="Current epoch time in milliseconds">
+            <span class="time-label">Epoch ms</span>
+            <time
+              data-testid="test-user-time"
+              id="epoch-display"
+              class="epoch-time"
+              aria-live="polite"
+              aria-atomic="true"
+              aria-label="Current time in milliseconds since Unix epoch"
+            >12345689</time>
+          </div>
+
+          <hr class="divider" />
+
+          <!-- Social links -->
+          <nav
+            data-testid="test-user-social-links"
+            aria-label="Social media profiles"
+          >
+            <ul class="social-list" role="list">
+              <li>
+                <a
+                  data-testid="test-user-social-twitter"
+                  href="https://x.com/stephanyoguocha"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  aria-label="Stephanie Oguocha on Twitter / X (opens in new tab)"
+                >
+                  <!-- X / Twitter icon -->
+                  <i class="fa-brands fa-x-twitter"></i>
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  data-testid="test-user-social-github"
+                  href="https://github.com/stephany247"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  aria-label="Stephanie Oguocha on GitHub (opens in new tab)"
+                >
+                  <!-- GitHub icon -->
+                  <i class="fa-brands fa-github"></i>
+
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a
+                  data-testid="test-user-social-linkedin"
+                  href="https://www.linkedin.com/in/onyinye-oguocha/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                  aria-label="Stephanie Oguocha on LinkedIn (opens in new tab)"
+                >
+                  <!-- LinkedIn icon -->
+                  <i class="fa-brands fa-linkedin"></i>
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <hr class="divider" />
+
+          <!-- Hobbies & Dislikes -->
+          <div class="lists-row">
+            <section aria-labelledby="hobbies-heading">
+              <h2 id="hobbies-heading" class="list-heading">Hobbies</h2>
+              <ul
+                data-testid="test-user-hobbies"
+                class="tag-list hobbies"
+                role="list"
+              >
+                <li>Reading novels and short stories</li>
+                <li>Designing UI mockups</li>
+                <li>Watching movies and documentaries</li>
+              </ul>
+            </section>
+
+            <section aria-labelledby="dislikes-heading">
+              <h2 id="dislikes-heading" class="list-heading">Dislikes</h2>
+              <ul
+                data-testid="test-user-dislikes"
+                class="tag-list dislikes"
+                role="list"
+              >
+                <li>Slow websites</li>
+                <li>Messy code</li>
+                <li>Disorganization</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
