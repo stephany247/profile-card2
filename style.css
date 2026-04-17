@@ -298,7 +298,7 @@ body {
 }
 
 /* responsive */
-@media (min-width: 520px) {
+@media (min-width: 580px) {
   .profile-card {
     grid-template-columns: 130px 1fr;
     align-items: start;
